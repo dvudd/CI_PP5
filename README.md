@@ -134,6 +134,8 @@ Although your friend has an excellent understanding of property prices in her ow
 * Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
 * The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
+- https://seaborn.pydata.org/tutorial/function_overview.html
+
 ### Media
 
 * The photos used on the home and sign-up page are from This Open Source site
