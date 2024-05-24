@@ -1,0 +1,48 @@
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+from src.data_management import load_pkl_file
+from src.machine_learning.evaluate import performance, evaluation
+
+
+def page_ML_performance_body():
+
+    version = 'v1'
+    model = load_pkl_file(f"outputs/ml_pipeline/{version}/pipeline.pkl")
+    evaluation_plot = plt.imread(f"outputs/ml_pipeline/{version}/evaluation_plot.png")
+    feature_importance = plt.imread(f"outputs/ml_pipeline/{version}/features_importance.png")
+    x_train = pd.read_csv(f"outputs/ml_pipeline/{version}/x_train.csv")
+    x_test = pd.read_csv(f"outputs/ml_pipeline/{version}/x_test.csv")
+    y_train = pd.read_csv(f"outputs/ml_pipeline/{version}/y_train.csv").values
+    y_test = pd.read_csv(f"outputs/ml_pipeline/{version}/y_test.csv").values
+
+    st.write("### ML Performance")
+
+    # Pipeline training conclusions
+    st.info(
+        f"* The pipeline performance (R2 score) for the model is:\n"
+        f"* Train: 0.84\n"
+        f"* Test: 0.77\n"
+    )
+
+    # Pipeline
+    st.write("---")
+    st.write("* The pipeline that was used in this project:")
+    st.write(model)
+
+    # Feature importance plot
+    st.write("---")
+    st.write("### Feature Importance Plot")
+    st.write("* The features the model was trained and their importance.")
+    st.write(x_train.columns.to_list())
+    st.image(feature_importance)
+
+    # Evaluation
+    st.write("---")
+    st.write("### Pipeline Performance")
+    performance(x_train, y_train, x_test, y_test, model)
+    st.text("")
+
+    # Performance plot
+    st.write("### Pipeline Performance Plots")
+    st.image(evaluation_plot)
