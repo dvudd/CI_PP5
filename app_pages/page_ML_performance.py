@@ -19,10 +19,8 @@ def page_ML_performance_body():
     st.write("### ML Performance")
 
     # Pipeline training conclusions
-    st.info(
-        f"* The pipeline performance (R2 score) for the model is:\n"
-        f"* Train: 0.84\n"
-        f"* Test: 0.77\n"
+    st.warning(
+        f"* A technical page displaying your model performance. If you deployed an ML pipeline, you have to display your pipeline steps."
     )
 
     # Pipeline

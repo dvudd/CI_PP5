@@ -5,9 +5,8 @@ def page_summary_body():
     st.write("### Quick Project Summary")
 
     # Text based on README file - "Dataset Content" section
-    st.info(
-        f"**Project Terms & Jargon**\n"
-        f"* something something"
+    st.warning(
+        f"* A project summary page, showing the project dataset summary and the client's requirements."
         )
 
     # Text based on README file - "Dataset Content" section
