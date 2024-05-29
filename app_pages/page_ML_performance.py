@@ -6,7 +6,12 @@ from src.machine_learning.evaluate import performance, evaluation
 
 
 def page_ML_performance_body():
-
+    """
+    This function loads the trained machine learning pipeline and its evaluation
+    results, including feature importance and performance plots, and displays
+    them in a Streamlit app. It also shows the pipeline steps and the features
+    used for training the model.
+    """
     version = 'v1'
     model = load_pkl_file(f"outputs/ml_pipeline/{version}/pipeline.pkl")
     evaluation_plot = plt.imread(f"outputs/ml_pipeline/{version}/evaluation_plot.png")
