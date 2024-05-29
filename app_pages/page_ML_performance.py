@@ -23,11 +23,6 @@ def page_ML_performance_body():
 
     st.write("### ML Performance")
 
-    # Pipeline training conclusions
-    st.warning(
-        f"* A technical page displaying your model performance. If you deployed an ML pipeline, you have to display your pipeline steps."
-    )
-
     # Pipeline
     st.write("---")
     st.write("* The pipeline that was used in this project:")
