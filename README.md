@@ -1,48 +1,14 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Heritage Housing Issues
 
-[DEPLOYED LINK](https://ci-pp5-47edc56402d4.herokuapp.com/)
+**Heritage Housing Issues** is a Machine Learning project that aims to help users to predict the sale prices of
+houses in Ames, Iowa.
+The project is hosted here: [DEPLOYED LINK](https://ci-pp5-47edc56402d4.herokuapp.com/)
 
-## Template Instructions
+# Contents
 
-Welcome,
 
-This is the Code Institute student template for the Heritage Housing project option in Predictive Analytics. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+# User Stories
 
-You can safely delete the Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-2. Log into the cloud-based IDE with your GitHub account.
-
-3. On your Dashboard, click on the Create button
-
-4. Paste in the URL you copied from GitHub earlier
-
-5. Click Create
-
-6. Wait for the workspace to open. This can take a few minutes.
-
-7. Open a new terminal and `pip3 install -r requirements.txt`
-
-11. Open the jupyter_notebooks directory and click on the notebook you want to open.
-
-12. Click the kernel button and choose Python Environments.
-
-Note that the kernel says Python 3.8.18 as it inherits from the workspace so it will be Python-3.8.18 as installed by our template. To confirm this you can use `! python --version` in a notebook code cell.
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In your Cloud IDE, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with *Regenerate API Key*.
 
 ## Dataset Content
 
@@ -86,8 +52,16 @@ Although your friend has an excellent understanding of property prices in her ow
 * 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
 ## Hypothesis and how to validate?
-
 * List here your project hypothesis(es) and how you envision validating it (them).
+### Quality
+Validated through a correlation study.
+- Findings indicate that the overall quality and kitchen quality of a house significantly influence the sale price.
+### Size
+Validated through a correlation study.
+- Results show that larger above-ground living areas and garage sizes positively impact the sale price.
+### Age
+Validated through a correlation study.
+- The property's age has an effect on its sale price. This indicates that the construction date of both the house and garage has an impact on the sale price of the property.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
@@ -143,8 +117,8 @@ Although your friend has an excellent understanding of property prices in her ow
 * The photos used on the home and sign-up page are from This Open Source site
 * The images used for the gallery page were taken from this other open-source site
 
-## Acknowledgements (optional)
-
-
-* In case you would like to thank the people that provided support through this project.
-
+### Acknowledgements
+- Thank you to my mentor Mo Shami.\
+![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)\
+This is my Portfolio Project 5 as part of the Full Stack Software Developer program at [Code Institute](https://codeinstitute.net/).\
+David Eriksson 2024
