@@ -121,6 +121,8 @@ The client is interested in predicting the house sale price from her four inheri
 
 ## Testing
 ### Validation
+No errors were found when passing through the [CI Python Linter](https://pep8ci.herokuapp.com/#).
+### Manual Testing
 
 ## Unfixed Bugs
 No known bugs remaining.
