@@ -1,20 +1,29 @@
 import streamlit as st
 import pandas as pd
-from src.data_management import load_pkl_file, load_inherited_data, load_house_data
-from src.machine_learning.predict_house_prices import single_house_prediction, inherited_house_prediction
+from src.data_management import (
+    load_pkl_file,
+    load_inherited_data,
+    load_house_data
+    )
+from src.machine_learning.predict_house_prices import (
+    single_house_prediction,
+    inherited_house_prediction
+    )
+
 
 def page_prediction_body():
     """
-    This function sets up a Streamlit page to allow users to input data for a single house 
-    and get a predicted sale price using a pre-trained model. It also provides functionality 
-    to predict the sale prices of multiple inherited houses and displays the combined total 
-    predicted sale price. The function uses interactive widgets to collect user inputs and 
-    display the predictions.
+    This function sets up a Streamlit page to allow users to input data for a
+    single house and get a predicted sale price using a pre-trained model.
+    It also provides functionality to predict the sale prices of multiple
+    inherited houses and displays the combined total predicted sale price.
+    The function uses interactive widgets to collect user inputs and display
+    the predictions.
     """
-    # 
     version = 'v1'
     model = load_pkl_file(f"outputs/ml_pipeline/{version}/pipeline.pkl")
-    features = (pd.read_csv(f"outputs/ml_pipeline/{version}/x_train.csv").columns.to_list())
+    features = (pd.read_csv(
+        f"outputs/ml_pipeline/{version}/x_train.csv").columns.to_list())
 
     # Inherited House Price Predictions
     st.write("### Sale Price Prediction Interface - Inherited Houses")
@@ -22,7 +31,8 @@ def page_prediction_body():
 
     st.info(
         # Copied from README file - "Business Requirements" section
-        f"* Business requirement 2 - The client is interested in predicting the house sale prices from\n"
+        f"* Business requirement 2 - The client is interested in predicting"
+        f"the house sale prices from\n"
         f"her 4 inherited houses, and any other house in Ames, Iowa."
     )
 
@@ -58,9 +68,9 @@ def page_prediction_body():
 
 def input_widget():
     """
-    This function sets up a Streamlit interface with interactive widgets for users to input 
-    data for a single house's features. The collected data is then stored in a DataFrame 
-    which can be used for making predictions.
+    This function sets up a Streamlit interface with interactive widgets for
+    users to input data for a single house's features. The collected data is
+    then stored in a DataFrame which can be used for making predictions.
     """
 
     # Load dataset
