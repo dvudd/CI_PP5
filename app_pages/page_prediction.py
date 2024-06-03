@@ -32,7 +32,7 @@ def page_prediction_body():
     st.info(
         # Copied from README file - "Business Requirements" section
         f"* Business requirement 2 - The client is interested in predicting"
-        f"the house sale prices from\n"
+        f" the house sale prices from\n"
         f"her 4 inherited houses, and any other house in Ames, Iowa."
     )
 

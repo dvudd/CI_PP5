@@ -31,7 +31,7 @@ def page_correlation_body():
     st.info(
         # Copied from README file - "Business Requirements" section
         f"* Business requirement 1 - The client is interested in discovering "
-        f" how the house attributes correlate with the sales prices. "
+        f"how the house attributes correlate with the sales prices. "
         f"Therefore, the client expects data visualizations "
         f"of the correlated variables against the sale price.")
 
@@ -55,7 +55,7 @@ def page_correlation_body():
     # Conclusions
     st.success(
         f"The price of a property is directly correlated with its quality and"
-        f"size, as well as its construction date."
+        f" size, as well as its construction date."
     )
 
     # Pearson Correlation
