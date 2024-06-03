@@ -77,13 +77,21 @@ The client is interested in predicting the house sale price from her four inheri
 * The agreement with the client requires an R2 score of at least 0.75 on both the training and test sets.
 
 ## ML Business Case
-
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+* We want an ML model to predict the sale price of different houses in the Ames, Iowa region.
+* The model should have an R2 score of at least 0.75 on both the train and the test sets.
+* The training data comes from a public dataset and contains about 1500 records and have 22 features.
+* The output is an numerical value representing the predicted sale price in USD.
 
 ## Dashboard Design
+### 1 Project Summary
 
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
+### 2 Predict House Prices
+
+### 3 Pricing Correlation
+
+### 4 Project Hypothesis and Validation
+
+### 5 ML Performance
 
 ## Unfixed Bugs
 No known bugs remaining.
@@ -91,7 +99,7 @@ No known bugs remaining.
 
 ### Heroku
 
-* The App live link is: <https://YOUR_APP_NAME.herokuapp.com/>
+* The App live link is: [Heritage Housing Issues](https://ci-pp5-47edc56402d4.herokuapp.com/)
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
