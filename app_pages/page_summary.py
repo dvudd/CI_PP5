@@ -6,16 +6,10 @@ def page_summary_body():
     st.write("### Quick Project Summary")
 
     # Text based on README file - "Dataset Content" section
-    st.warning(
-        f"* A project summary page, showing the project dataset summary and"
-        f"the client's requirements."
-        )
-
-    # Text based on README file - "Dataset Content" section
     st.info(
         f"**Project Dataset**\n"
         f"* The dataset is sourced from"
-        f"[Kaggle](https://www.kaggle.com/datasets/codeinstitute/"
+        f" [Kaggle](https://www.kaggle.com/datasets/codeinstitute/"
         f"housing-prices-data).\n"
         f"* The dataset has almost 1.5 thousand rows and represents housing"
         f"records from Ames, Iowa, indicating house profile (Floor Area,"
