@@ -54,8 +54,8 @@ def page_correlation_body():
 
     # Conclusions
     st.success(
-        f"The price of a property is directly correlated with its quality and
-        size, as well as its construction date."
+        f"The price of a property is directly correlated with its quality and"
+        f"size, as well as its construction date."
     )
 
     # Pearson Correlation
