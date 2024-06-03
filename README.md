@@ -3,11 +3,35 @@
 houses in Ames, Iowa.
 The project is hosted here: [DEPLOYED LINK](https://ci-pp5-47edc56402d4.herokuapp.com/)
 
-# Contents
-
-
-# User Stories
-
+## Contents
+- [Heritage Housing Issues](#heritage-housing-issues)
+- [Dataset Content](#dataset-content)
+- [Business Requirements](#business-requirements)
+- [Hypothesis and how to validate?](#hypothesis-and-how-to-validate)
+    * [Quality](#quality)
+    * [Size](#size)
+    * [Age](#age)
+- [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
+    * [Business Requirement 1](#business-requirement-1)
+    * [Business Requirement 2](#buisness-requirement-2)
+- [ML Business Case](#ml-business-case)
+- [User Stories](#user-stories)
+- [Dashboard Design](#dashboard-design)
+    * [Page 1: Project Summary](#page-1-project-summary)
+    * [Page 2: Predict House Prices](#page-2-predict-house-prices)
+    * [Page 3: Pricing Correlation](#page-3-pricing-correlation)
+    * [Page 4: Project Hypothesis and Validation](#page-4-project-hypothesis-and-validation)
+    * [Page 5: ML Performance](#page-5-ml-performance)
+- [Testing](#testing)
+    * [Validation](#validation)
+- [Unfixed Bugs](#unfixed-bugs)
+- [Deployment](#deployment)
+    * [Heroku](#heroku)
+- [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+- [Credits](#credits)
+    * [Content](#content)
+    * [Media](#media)
+- [Acknowledgements](#acknowledgements)
 
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
@@ -82,19 +106,25 @@ The client is interested in predicting the house sale price from her four inheri
 * The training data comes from a public dataset and contains about 1500 records and have 22 features.
 * The output is an numerical value representing the predicted sale price in USD.
 
+## User Stories
+
 ## Dashboard Design
-### 1 Project Summary
+### Page 1: Project Summary
 
-### 2 Predict House Prices
+### Page 2: Predict House Prices
 
-### 3 Pricing Correlation
+### Page 3: Pricing Correlation
 
-### 4 Project Hypothesis and Validation
+### Page 4: Project Hypothesis and Validation
 
-### 5 ML Performance
+### Page 5: ML Performance
+
+## Testing
+### Validation
 
 ## Unfixed Bugs
 No known bugs remaining.
+
 ## Deployment
 
 ### Heroku
