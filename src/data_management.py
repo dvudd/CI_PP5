@@ -1,11 +1,13 @@
 import joblib
 import pandas as pd
 
+
 def load_pkl_file(file_path):
     """
     Load a pickle file from the specified file path.
     """
     return joblib.load(filename=file_path)
+
 
 def load_inherited_data():
     """
@@ -14,8 +16,10 @@ def load_inherited_data():
     values, and returns the preprocessed DataFrame.
     """
     df = pd.read_csv("inputs/datasets/raw/inherited_houses.csv")
-    df['KitchenQual'] = df['KitchenQual'].replace({'Ex': 4, 'Gd': 3, 'TA': 2, 'Fa': 1, 'Po': 0})
+    df['KitchenQual'] = df['KitchenQual'].replace(
+        {'Ex': 4, 'Gd': 3, 'TA': 2, 'Fa': 1, 'Po': 0})
     return df
+
 
 def load_house_data():
     """
@@ -24,5 +28,6 @@ def load_house_data():
     values, and returns the preprocessed DataFrame.
     """
     df = pd.read_csv("outputs/datasets/collection/HousePrices.csv")
-    df['KitchenQual'] = df['KitchenQual'].replace({'Ex': 4, 'Gd': 3, 'TA': 2, 'Fa': 1, 'Po': 0})
+    df['KitchenQual'] = df['KitchenQual'].replace(
+        {'Ex': 4, 'Gd': 3, 'TA': 2, 'Fa': 1, 'Po': 0})
     return df

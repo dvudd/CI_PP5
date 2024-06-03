@@ -5,9 +5,9 @@ from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 
 def performance(x_train, y_train, x_test, y_test, pipeline):
     """
-    This function evaluates the performance of a trained machine learning pipeline
-    on both the training and test datasets, displaying the evaluation metrics in
-    a Streamlit app.
+    This function evaluates the performance of a trained machine learning
+    pipeline on both the training and test datasets, displaying the evaluation
+    metrics in a Streamlit app.
     """
     st.write("Model Evaluation \n")
     st.write("* Train Set")
