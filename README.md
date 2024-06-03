@@ -1,5 +1,4 @@
 # Heritage Housing Issues
-
 **Heritage Housing Issues** is a Machine Learning project that aims to help users to predict the sale prices of
 houses in Ames, Iowa.
 The project is hosted here: [DEPLOYED LINK](https://ci-pp5-47edc56402d4.herokuapp.com/)
@@ -11,7 +10,6 @@ The project is hosted here: [DEPLOYED LINK](https://ci-pp5-47edc56402d4.herokuap
 
 
 ## Dataset Content
-
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
 * The dataset has almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
 
@@ -43,7 +41,6 @@ The project is hosted here: [DEPLOYED LINK](https://ci-pp5-47edc56402d4.herokuap
 |SalePrice|Sale Price|34900 - 755000|
 
 ## Business Requirements
-
 As a good friend, you are requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to  help in maximising the sales price for the inherited properties.
 
 Although your friend has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that.
@@ -64,8 +61,20 @@ Validated through a correlation study.
 - The property's age has an effect on its sale price. This indicates that the construction date of both the house and garage has an impact on the sale price of the property.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
+### Business Requirement 1
+The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
 
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+* The house attributes will be correlated with the sale prices using conventional data analysis.
+* Correlation and PPS study to be completed - Spearman, Pearson and Predictive Power Score (PPS). There will be a visual representation of these using heatmaps
+* A scatter plot will be used to illustrate the correlation between different features and the sale price.
+
+### Buisness Requirement 2
+The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
+
+* The data indicates the need for a regressor with the sale price as the target variable.
+* Feature engineering will be applied to compare various transformations.
+* A pipeline will be constructed based on the optimal transformations and the most significant features.
+* The agreement with the client requires an R2 score of at least 0.75 on both the training and test sets.
 
 ## ML Business Case
 
@@ -77,9 +86,7 @@ Validated through a correlation study.
 * Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
 
 ## Unfixed Bugs
-
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
-
+No known bugs remaining.
 ## Deployment
 
 ### Heroku
