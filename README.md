@@ -107,6 +107,13 @@ The client is interested in predicting the house sale price from her four inheri
 * The output is an numerical value representing the predicted sale price in USD.
 
 ## User Stories
+- As a user, I want to identify which house attributes are most correlated with the sale price to ensure accurate predictions based on the right features.
+- As a user, I want a dashboard to display the prediction results effectively.
+- As a user, I want interactive input widgets to input real-time house data and predict the sale price.
+- As a user, I want to see relevant plots to visualize the relationships between sale price and other features.
+- As a user, I want to see relevant plots to visualize the relationships between sale price and other features.
+- As a user, I want to know the source and content of the training data to be confident in the model's quality.
+- As a user, I want to evaluate the model's performance to ensure the reliability of the predictions.
 
 ## Dashboard Design
 ### Page 1: Project Summary
@@ -130,11 +137,9 @@ No known bugs remaining.
 ## Deployment
 
 ### Heroku
-
 * The App live link is: [Heritage Housing Issues](https://ci-pp5-47edc56402d4.herokuapp.com/)
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
-
 1. Log in to Heroku and create an App
 2. At the Deploy tab, select GitHub as the deployment method.
 3. Select your repository name and click Search. Once it is found, click Connect.
