@@ -116,14 +116,15 @@ The client is interested in predicting the house sale price from her four inheri
 
 ## Dashboard Design
 ### Page 1: Project Summary
-
+![Project Summary](readme_images/page1.webp)
 ### Page 2: Predict House Prices
-
+![Predict House Prices](readme_images/page2.webp)
 ### Page 3: Pricing Correlation
-
+![Pricing Correlation](readme_images/page3.webp)
 ### Page 4: Project Hypothesis and Validation
-
+![Project Hypothesis](readme_images/page4.webp)
 ### Page 5: ML Performance
+![ML Performace](readme_images/page5.webp)
 
 ## Testing
 ### Validation
