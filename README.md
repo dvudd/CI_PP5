@@ -1,4 +1,5 @@
 # Heritage Housing Issues
+![Header image](readme_images/header.webp)
 **Heritage Housing Issues** is a Machine Learning project that aims to help users to predict the sale prices of
 houses in Ames, Iowa.
 The project is hosted here: [DEPLOYED LINK](https://ci-pp5-47edc56402d4.herokuapp.com/)
@@ -29,8 +30,6 @@ The project is hosted here: [DEPLOYED LINK](https://ci-pp5-47edc56402d4.herokuap
     * [Heroku](#heroku)
 - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
 - [Credits](#credits)
-    * [Content](#content)
-    * [Media](#media)
 - [Acknowledgements](#acknowledgements)
 
 ## Dataset Content
@@ -135,7 +134,6 @@ No errors were found when passing through the [CI Python Linter](https://pep8ci.
 No known bugs remaining.
 
 ## Deployment
-
 ### Heroku
 * The App live link is: [Heritage Housing Issues](https://ci-pp5-47edc56402d4.herokuapp.com/)
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
@@ -148,26 +146,36 @@ No known bugs remaining.
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 ## Main Data Analysis and Machine Learning Libraries
-
-* Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
+* [pandas](https://pandas.pydata.org)
+    - Used to read/write and manipulate CSV data 
+* [NumPy](https://numpy.org)
+    - Used to generate arrays of random numbers 
+* [feature-engine](https://feature-engine.trainindata.com/en/latest/)
+    - Used to compare transformers in feature engineering notebook.
+* [Matplotlib](https://matplotlib.org)
+    - Used to visualize the data
+* [plotly](https://plotly.com/)
+    - Used to visualize the data
+* [YData Profiling](https://docs.profiling.ydata.ai/latest/)
+    - Used to create an profile report for evaluation
+* [seaborn](https://seaborn.pydata.org)
+    - Used to create statistical graphs
+* [ppscore](https://pypi.org/project/ppscore/)
+    - Used to calculate correlations between variables
+* [streamlit](https://streamlit.io/)
+    - Used to create an user interface
+* [scikit-learn](https://scikit-learn.org/stable/)
+    - Used to create the ML pipeline
 
 ## Credits
-
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-* You can break the credits section up into Content and Media, depending on what you have included in your project.
-
-### Content
-
-* The text for the Home page was taken from Wikipedia Article A
-* Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-* The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-- https://seaborn.pydata.org/tutorial/function_overview.html
-
-### Media
-
-* The photos used on the home and sign-up page are from This Open Source site
-* The images used for the gallery page were taken from this other open-source site
+* The project was based on the [Code Institute Walkthrough Project 02 - Churnometer](https://github.com/Code-Institute-Solutions/churnometer)
+* During the project, I often referred to these chapters in the Code Institute LMS:
+    - Data Analysis & Machine Learning Toolkit
+    - Develop and Deploy an A.I. System
+* I also referred to the documentation in these sites:
+    - [pandas](https://pandas.pydata.org)
+    - [seaborn](https://seaborn.pydata.org)
+    - [streamlit](https://streamlit.io/)
 
 ### Acknowledgements
 - Thank you to my mentor Mo Shami.\
