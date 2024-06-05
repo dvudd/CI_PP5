@@ -64,7 +64,7 @@ def page_correlation_body():
         )
     pearson_corr = pearson_corr.drop('SalePrice')
     if st.checkbox("Pearson Correlation"):
-        barplot_corr(df=pearson_corr)
+        barplot_corr(df=pearson_corr, method='Pearson')
 
     # Spearman Correlation
     spearman_corr = df.corr(method='spearman')['SalePrice'].sort_values(
@@ -72,14 +72,14 @@ def page_correlation_body():
         )
     spearman_corr = spearman_corr.drop('SalePrice')
     if st.checkbox("Spearman Correlation"):
-        barplot_corr(df=spearman_corr)
+        barplot_corr(df=spearman_corr, method='Spearman')
 
     # Comparison
     if st.checkbox("Comparison"):
         compare_corr(pearson_corr, spearman_corr)
 
 
-def barplot_corr(df):
+def barplot_corr(df, method):
     """
     This function creates and displays a bar plot of the correlation
     coefficients between various house features and the sale price using
@@ -88,7 +88,7 @@ def barplot_corr(df):
     plt.figure(figsize=(10, 8))
     sns.barplot(x=df.index, y=df.values, palette='viridis')
     plt.xticks(rotation=90)
-    plt.title('Spearman Correlation with SalePrice')
+    plt.title(f'{method} Correlation with SalePrice')
     plt.xlabel('Features')
     plt.ylabel('Correlation Coefficient')
     st.pyplot(plt)
