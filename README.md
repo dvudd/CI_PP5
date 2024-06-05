@@ -25,6 +25,7 @@ The project is hosted here: [DEPLOYED LINK](https://ci-pp5-47edc56402d4.herokuap
     * [Page 5: ML Performance](#page-5-ml-performance)
 - [Testing](#testing)
     * [Validation](#validation)
+    * [Manual Testing](#manual-testing)
 - [Unfixed Bugs](#unfixed-bugs)
 - [Deployment](#deployment)
     * [Heroku](#heroku)
