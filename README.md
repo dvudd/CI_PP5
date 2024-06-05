@@ -130,6 +130,26 @@ The client is interested in predicting the house sale price from her four inheri
 ### Validation
 No errors were found when passing through the [CI Python Linter](https://pep8ci.herokuapp.com/#).
 ### Manual Testing
+| Test Case | Expected Behavior | Outcome |
+| --------- | ----------------- | ------- |
+| Menu buttons | Redirects to the correct page | PASS |
+| Inspect Inherited data button | Shows Inherited data | PASS |
+| Run Predictive Analysis on Inherited Houses | Shows the predicted sale prices on Inherited houses | PASS |
+| Single House feature selectors | Changes value when - or 0 button is pressed | PASS |
+| Single House feature selectors | Can take a custom value | PASS |
+| Single House feature selectors | Only take numbers as a value | PASS |
+| Run Predictive Analysis on Single House | Shows a prediticed value | PASS |
+| Run Predictive Analysis on Single House | Predicted value changes depending on value of features | PASS |
+| Inspect Housing Data button | Shows Housing data | PASS |
+| Pearson Correlation button | Shows barplot of Pearson correlation with saleprice | PASS |
+| Spearman Correlation button | Shows barplot of Spearman correlation with saleprice | PASS |
+| Comparison button | Show the scatterplot of both Pearson and Spearman correlations | PASS |
+| Comparison button | Shows the top features | PASS |
+| Project Hypothesis and Validation page | Shows the project hypothesis text | PASS |
+| ML Performance page | Shows the pipeline | PASS |
+| ML Performance page | Show the Feature Importance Plot | PASS |
+| ML Performance page | Shows the Pipeline Performance | PASS |
+| ML Performance page | Shows the Pipeline Performance Plots | PASS |
 
 ## Unfixed Bugs
 No known bugs remaining.
