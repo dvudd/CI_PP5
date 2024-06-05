@@ -84,15 +84,15 @@ Validated through a correlation study.
 Validated through a correlation study.
 - The property's age has an effect on its sale price. This indicates that the construction date of both the house and garage has an impact on the sale price of the property.
 
-## The rationale to map the business requirements to the Data Visualisations and ML tasks
+## The rationale to map the business requirements to the Data Visualizations and ML tasks
 ### Business Requirement 1
-The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
+The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualizations of the correlated variables against the sale price to show that.
 
 * The house attributes will be correlated with the sale prices using conventional data analysis.
 * Correlation and PPS study to be completed - Spearman, Pearson and Predictive Power Score (PPS). There will be a visual representation of these using heatmaps
 * A scatter plot will be used to illustrate the correlation between different features and the sale price.
 
-### Buisness Requirement 2
+### Business Requirement 2
 The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
 * The data indicates the need for a regressor with the sale price as the target variable.
@@ -104,7 +104,7 @@ The client is interested in predicting the house sale price from her four inheri
 * We want an ML model to predict the sale price of different houses in the Ames, Iowa region.
 * The model should have an R2 score of at least 0.75 on both the train and the test sets.
 * The training data comes from a public dataset and contains about 1500 records and have 22 features.
-* The output is an numerical value representing the predicted sale price in USD.
+* The output is a numerical value representing the predicted sale price in USD.
 
 ## User Stories
 - As a user, I want to identify which house attributes are most correlated with the sale price to ensure accurate predictions based on the right features.
@@ -139,12 +139,12 @@ No errors were found when passing through the [CI Python Linter](https://pep8ci.
 | Single House feature selectors | Changes value when - or 0 button is pressed | PASS |
 | Single House feature selectors | Can take a custom value | PASS |
 | Single House feature selectors | Only take numbers as a value | PASS |
-| Run Predictive Analysis on Single House | Shows a prediticed value | PASS |
+| Run Predictive Analysis on Single House | Shows a predicted value | PASS |
 | Run Predictive Analysis on Single House | Predicted value changes depending on value of features | PASS |
 | Inspect Housing Data button | Shows Housing data | PASS |
-| Pearson Correlation button | Shows barplot of Pearson correlation with saleprice | PASS |
-| Spearman Correlation button | Shows barplot of Spearman correlation with saleprice | PASS |
-| Comparison button | Show the scatterplot of both Pearson and Spearman correlations | PASS |
+| Pearson Correlation button | Shows bar plot of Pearson correlation with sale price | PASS |
+| Spearman Correlation button | Shows bar plot of Spearman correlation with sale price | PASS |
+| Comparison button | Show the scatter plot of both Pearson and Spearman correlations | PASS |
 | Comparison button | Shows the top features | PASS |
 | Project Hypothesis and Validation page | Shows the project hypothesis text | PASS |
 | ML Performance page | Shows the pipeline | PASS |
