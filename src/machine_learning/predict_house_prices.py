@@ -48,7 +48,7 @@ def single_house_prediction(df, features, model):
 
     statement = (
             f"* The predictive value of this property is:"
-            f"**${round(price_prediction[0])}**.\n"
+            f" **${round(price_prediction[0])}**.\n"
             )
 
     st.write(statement)
