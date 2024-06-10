@@ -29,6 +29,8 @@ The project is hosted here: [DEPLOYED LINK](https://ci-pp5-47edc56402d4.herokuap
 - [Unfixed Bugs](#unfixed-bugs)
 - [Deployment](#deployment)
     * [Heroku](#heroku)
+    * [Forking the GitHub Repository](#forking-the-github-repository)
+    * [Making a Local Clone](#making-a-local-clone)
 - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
 - [Credits](#credits)
 - [Acknowledgements](#acknowledgements)
@@ -167,16 +169,51 @@ No known bugs remaining.
 
 ## Deployment
 ### Heroku
-* The App live link is: [Heritage Housing Issues](https://ci-pp5-47edc56402d4.herokuapp.com/)
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+[Click here to go to the deployed site](https://ci-pp5-47edc56402d4.herokuapp.com/)\
+The site was deployed to Heroku. The steps to deploy a site are as follows:
+1. Navigate to [Heroku](https://dashboard.heroku.com/apps)
+2. Click on "New", then "Create new app"
+3. Enter the app name, select your region, and click on "Create app"
+4. Navigate to the "Settings" tab
+5. Click on "Add buildpack", select "Python", and click on "Add Buildpack"
+6. Navigate to the "Deploy" tab
+7. In the "Deployment method" section, select "GitHub"
+8. In the "Connect to GitHub" section, select "Search"
+9. Find the desired repository, for this project I used "CI_PP5", and click "Connect"
+10. Click on either "Enable Automatic Deploys" or "Deploy Branch"
+11. Once the project has been deployed, scroll up and click on "Open app"
+>Note: This repo uses Python version 3.8.19. In order to use this version the Heroku Stack needs to be changed to heroku-20.\
+>[Click here for instructions](https://devcenter.heroku.com/articles/heroku-20-stack)
+### Forking the GitHub Repository
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/dvudd/CI_PP5)
+2. At the top of the Repository (not top of the page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+### Making a Local Clone
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/dvudd/CI_PP5)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+```sh
 
+$ git clone https://github.com/dvudd/CI_PP5
+
+```
+7. Press Enter. Your local clone will be created.
+8. Use pip to install the requirements:
+```sh
+
+$ pip install requirements.txt
+
+```
+9. Run the server:
+```sh
+
+$ streamlit run app.py
+
+```
 ## Main Data Analysis and Machine Learning Libraries
 * [pandas](https://pandas.pydata.org)
     - Used to read/write and manipulate CSV data 
