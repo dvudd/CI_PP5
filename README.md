@@ -118,14 +118,24 @@ The client is interested in predicting the house sale price from her four inheri
 ## Dashboard Design
 ### Page 1: Project Summary
 ![Project Summary](readme_images/page1.webp)
+Gives a quick summary of the project and lists the buisness requirements.
 ### Page 2: Predict House Prices
 ![Predict House Prices](readme_images/page2.webp)
+This is where the user can use the ML model to predict house prices. They can either predict the prices of the client's inherited houses or they can predict the sale price of a custom house.
 ### Page 3: Pricing Correlation
 ![Pricing Correlation](readme_images/page3.webp)
+Displays the results of the correlation analysis:
+* The dataset used for the analysis
+* Correlation plots for:
+    - Pearson correlation
+    - Spearman correlation
+    - A comparison of the two correlation methods
 ### Page 4: Project Hypothesis and Validation
 ![Project Hypothesis](readme_images/page4.webp)
+This page provides a summary of the initial hypothesis and conclusions.
 ### Page 5: ML Performance
 ![ML Performace](readme_images/page5.webp)
+This page details the ML pipeline and performance.
 
 ## Testing
 ### Validation
