@@ -75,7 +75,6 @@ Although your friend has an excellent understanding of property prices in her ow
 * 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
 ### Quality
 Validated through a correlation study.
 - Findings indicate that the overall quality and kitchen quality of a house significantly influence the sale price.
